@@ -54,7 +54,7 @@ func valid_user(username string) int {
 
 func main() {
 	file := flag.String("f", "", "Specify a file")
-    username := flag.String("u", "", "Specify one username")    
+	username := flag.String("u", "", "Specify one username")
 	flag.Parse()
 	if *file != "" {
 		f, err := os.Open(*file)
@@ -70,8 +70,8 @@ func main() {
 			}
 		}
 	} else if *username != "" {
-        if valid_user(*username) == 0 {
-            fmt.Println(*username)
-        }
-    }
+		if valid_user(*username) == 0 {
+			fmt.Println(*username)
+		}
+	}
 }
