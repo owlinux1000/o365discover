@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dev:
+    image: golang:1.18-alpine3.15
+    tty: true
+    stdin_open: true
+    working_dir: /go/src/o365discover
+    volumes:
+      - ./:/go/src/o365discover
